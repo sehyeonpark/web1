@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="웹 만들기_메뉴_일기">
+  <meta name="keywords" content="일기,다이어리,diary,love,사랑">
+  <meta name="author" content="Developer_조랭이">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>복습하기-일기</title>
+  <style>
+    th{
+      background-color: powderblue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="jolangei.html" title="조랭이 웹 사이트">홈으로</a></h1>
+  </header>
+  <article>
+  <form action="http//localhost/test.php" method="post" enctype="multipart/form-data">
+    <table border="2">
+      <thead>
+        <tr>
+          <th><label for="date">날짜</label></th>
+          <td><input id="date" name="date"type="date"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><label for="data">일기내용</label></th>
+          <td><textarea id="data" name="data" cols="100" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <th>스킨쉽</th>
+            <td>
+            <label>손잡기 : <input type="checkbox" name="love" value="hand"></label>
+            <label>포옹 : <input type="checkbox" name="love" value="hug"></label>
+            <label>뽀뽀 : <input type="checkbox" name="love" value="chu"></label>
+            </td>
+        </tr>
+        <tr>
+          <th>오늘의 행복지수</th>
+            <td>
+              <select name="mind">
+                <option value="happy">행복</option>
+                <option value="good">좋음</option>
+                <option value="sad">슬픔</option>
+              </select>
+            </td>
+        </tr>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>사진올리기</th>
+          <td><input type="file"></td>
+        </tr>
+      </tfoot>
+    </table>
+    <input type="submit" value="저장하기">
+    <input type="reset" value="초기화">
+  </form>
+  </article>
+</body>
+</html>
